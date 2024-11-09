@@ -1,1 +1,5 @@
-const log = console.log;
+const log = console.log
+
+function getCount() {
+  return 1
+}

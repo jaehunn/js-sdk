@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitest/config'
+import { resolve } from 'path'
+
 
 /**
  * @see https://eslint.org/docs/latest/use/configure/configuration-files
@@ -25,5 +27,11 @@ export default defineConfig({
         testTimeout: 10000,
         pool: 'forks',
         isolate: true,
+    },
+
+    resolve: {
+        alias: {
+            '~': resolve(__dirname, './src')
+        }
     },
 })

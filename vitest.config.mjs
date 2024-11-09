@@ -8,6 +8,7 @@ export default defineConfig({
     test: {
         globals: true,
         passWithNoTests: true,
+        watch: false,
         setupFiles: ['./vitest.setup.ts'],
         environment: 'node',
         coverage: {

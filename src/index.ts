@@ -1,5 +1,7 @@
 const log = console.log
 
-function getCount() {
-  return 1
+export function getCount() {
+  log('test')
+
+  return 11
 }

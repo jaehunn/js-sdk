@@ -1,7 +1,11 @@
-const log = console.log
+import { CounterService } from './service'
 
-export function getCount() {
-  log('test')
+class SDK {
+  public counterService: CounterService
 
-  return 11
+  constructor() {
+    this.counterService = new CounterService()
+  }
 }
+
+export default SDK

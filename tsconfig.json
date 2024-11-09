@@ -1,39 +1,39 @@
 {
   "compilerOptions": {
-      // 기본 ECMAScript 설정
-      "target": "ES2020",
-      "lib": ["ES2020", "DOM", "DOM.Iterable"],
-      
-      // 모듈 시스템 설정
-      "module": "ESNext",
-      "moduleResolution": "Bundler",
-      "baseUrl": ".",
-      "paths": {
-          "~/*": ["./src/*"]
-      },
-      
-      // 타입 체킹
-      "strict": true,
-      "noImplicitAny": true,
-      "noUnusedLocals": true,
-      "noUnusedParameters": true,
-      "noFallthroughCasesInSwitch": true,
-      
-      // 빌드 출력 설정
-      "declaration": true,
-      "sourceMap": true,
-      "outDir": "dist",
-      
-      // 기본 중요 설정
-      "allowJs": true,
-      "resolveJsonModule": true,
-      "isolatedModules": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      
-      "types": ["vitest/globals"]
+    // 기본 ECMAScript 설정
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // 모듈 시스템 설정
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+
+    // 타입 체킹
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // 빌드 출력 설정
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+
+    // 기본 중요 설정
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "types": ["vitest/globals"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  "exclude": ["node_modules", "dist"]
 }

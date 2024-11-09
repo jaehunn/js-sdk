@@ -1,0 +1,2 @@
+import{BehaviorSubject as n}from"rxjs";import{map as c}from"rxjs/operators";var e=class{constructor(t=0){this.count$=new n(t)}getCount(){return this.count$.asObservable()}increment(){this.count$.next(this.count$.value+1)}decrement(){this.count$.next(this.count$.value-1)}isCountAbove(t){return this.count$.pipe(c(u=>u>=t))}};var r=class{constructor(){this.counterService=new e}},v=r;export{v as default};
+//# sourceMappingURL=index.js.map

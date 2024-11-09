@@ -1,10 +1,15 @@
 {
-  "name": "js-sdk",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "@jaehun-lib/js-sdk",
+  "description": "sdk test",
+  "author": "Jaehun, Bang",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "sdk"
+  ],
   "version": "1.0.0",
   "sideEffects": false,
+  "main": "src/index.ts",
   "type": "module",
   "publishConfig": {
     "access": "public",
@@ -30,8 +35,6 @@
   "engines": {
     "node": "22.11.0"
   },
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.ts\"",
